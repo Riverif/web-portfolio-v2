@@ -29,9 +29,9 @@ export const HighlightedProject = ({ project }: { project: Project }) => {
   return (
     <motion.div
       ref={ref}
-      className="flex min-h-[95vh] flex-col items-center pb-[100px]"
+      className="flex flex-col items-center pb-[100px] md:min-h-[95vh]"
     >
-      <div className="sticky top-20 space-y-2 md:top-10 md:w-7/12">
+      <div className="space-y-2 md:top-10 md:w-7/12">
         <Link href={project.url} target="_blank">
           <motion.div
             className="group relative aspect-[16/8] w-full origin-top translate-x-[50%] translate-y-[500px] cursor-pointer overflow-hidden rounded-xl border border-slate-700 md:px-0"

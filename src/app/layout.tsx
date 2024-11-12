@@ -3,6 +3,7 @@ import "./globals.css";
 
 import { Roboto } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const font = Roboto({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <GoogleAnalytics gaId="G-NWG3FN4TE4" />
       </body>
     </html>
   );
